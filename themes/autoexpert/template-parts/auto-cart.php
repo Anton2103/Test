@@ -41,9 +41,8 @@ $options = get_field('auto_options',$post_id);
             </ul>
         </div>
         <div class="cart-auto-options">
-            <h3>Комплектація</h3>
+            <h3>Комплектація авто</h3>
             <p><?php the_field('auto_options'); ?></p>
         </div>
     </div>
-
 </div>
