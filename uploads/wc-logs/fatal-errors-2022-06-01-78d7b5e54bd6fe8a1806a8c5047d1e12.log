@@ -1,0 +1,109 @@
+2022-06-01T12:13:10+00:00 CRITICAL Uncaught Error: Call to undefined function wc_cart_cashback_html() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php:107
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#2 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#5 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woo у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php доступно 107
+
+2022-06-01T12:34:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_cart_cashback_html(), 0 passed in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php on line 107 and exactly 1 expected in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:11
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-c у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 11
+
+2022-06-01T12:34:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_cart_cashback_html(), 0 passed in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php on line 107 and exactly 1 expected in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:11
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-c у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 11
+
+2022-06-01T12:42:57+00:00 CRITICAL syntax error, unexpected 'esc_html_e' (T_STRING) у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 16
+
+2022-06-01T12:42:58+00:00 CRITICAL syntax error, unexpected 'esc_html_e' (T_STRING) у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 16
+
+2022-06-01T12:43:04+00:00 CRITICAL syntax error, unexpected 'esc_html_e' (T_STRING) у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 16
+
+2022-06-01T12:43:05+00:00 CRITICAL syntax error, unexpected 'esc_html_e' (T_STRING) у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 16
+
+2022-06-01T12:43:09+00:00 CRITICAL syntax error, unexpected 'esc_html_e' (T_STRING) у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 16
+
+2022-06-01T12:43:10+00:00 CRITICAL syntax error, unexpected 'esc_html_e' (T_STRING) у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 16
+
+2022-06-01T12:54:00+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+
+2022-06-01T12:54:06+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+
+2022-06-01T12:55:47+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+
+2022-06-01T12:57:43+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+
+2022-06-01T12:57:48+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+
+2022-06-01T12:57:54+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+

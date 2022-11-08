@@ -1,0 +1,11 @@
+2022-06-09T07:47:43+00:00 CRITICAL Uncaught Error: Call to undefined function pr() in /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php:14
+Stack trace:
+#0 /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/woocommerce/cart/cart-totals.php(107): wc_cart_cashback_html()
+#1 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/Users/macbook/...')
+#2 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2123): wc_get_template('cart/cart-total...')
+#3 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(307): woocommerce_cart_totals('')
+#4 /Users/macbook/Sites/zakCars/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/macbook/Sites/zakCars/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/templates/cart/cart.php(172): do_action('woocommerce_car...')
+#7 /Users/macbook/Sites/zakCars/wp-content/plugins/woocommerce/includes/wc-core-fu у /Users/macbook/Sites/zakCars/wp-content/themes/zakCars/functions.php доступно 14
+
