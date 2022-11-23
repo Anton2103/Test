@@ -1,6 +1,6 @@
 <?php
 
-namespace Inc;
+
 
 class Blocks {
     /**

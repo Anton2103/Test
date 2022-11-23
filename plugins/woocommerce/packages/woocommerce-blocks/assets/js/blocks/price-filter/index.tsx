@@ -15,11 +15,6 @@ import metadata from './block.json';
 import { blockAttributes } from './attributes';
 
 registerBlockType( metadata, {
-	title: __( 'Filter by Price', 'woo-gutenberg-products-block' ),
-	description: __(
-		'Allow customers to filter products by price range.',
-		'woo-gutenberg-products-block'
-	),
 	icon: {
 		src: (
 			<Icon
@@ -51,7 +46,7 @@ registerBlockType( metadata, {
 								'woo-gutenberg-products-block'
 							),
 						headingLevel: 3,
-						inlineInput: true,
+						inlineInput: false,
 					} ),
 			},
 		],

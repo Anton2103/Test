@@ -16,8 +16,9 @@ $loop_true = new WP_Query($args);
     <div class="wrapper-container-cars">
         <h3>ПРОДАНО</h3>
         <?php
-        if ($loop_true->have_posts()):
-            while ($loop_true->have_posts()) :$loop_true->the_post();
+        if ($loop_true->have_posts()) :
+            while ($loop_true->have_posts()) :
+                $loop_true->the_post();
                 get_template_part('template-parts/auto-cart', null, ['auto' => get_post()]);
             endwhile;
         endif;

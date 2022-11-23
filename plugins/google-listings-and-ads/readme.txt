@@ -2,9 +2,9 @@
 Contributors: automattic, google, woocommerce
 Tags: woocommerce, google, listings, ads
 Requires at least: 5.7
-Tested up to: 6.0
+Tested up to: 6.1
 Requires PHP: 7.4
-Stable tag: 2.1.1
+Stable tag: 2.2.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -54,7 +54,7 @@ Create a new Google Ads account through Google Listings & Ads and a promotional 
 = Minimum Requirements =
 
 * WordPress 5.7 or greater
-* WooCommerce 6.0 or greater
+* WooCommerce 6.8 or greater
 * PHP version 7.4 or greater
 * MySQL version 5.6 or greater
 
@@ -109,26 +109,50 @@ Yes, you can run both at the same time, and we recommend it! In the US, advertis
 
 == Changelog ==
 
-= 2.1.1 - 2022-09-06 =
-* Dev - Run PHPCS checks for unit tests.
-* Fix - A compatibility issue with WooCommerce 6.9 which prevents interaction with the input field of the paid campaign budget.
-* Fix - Fatal error if a null rate specified for flat rate methods with shipping classes.
-* Tweak - Add a filter to disable GTag tracking.
-* Tweak - Updated plugin icons.
+= 2.2.1 - 2022-11-15 =
+* Add - Declare compatibility for High Performance Order Storage.
+* Dev - Selectively externalize bundled packages.
+* Fix - E2E Testing: Reduce the false positive rate and adjust the running events on GitHub Actions.
+* Fix - Move the order of Google Listings & Ads below the Coupons in the Marketing menu of WooCommerce admin page.
+* Fix - WC 6.9 compatibility: Shipping time settings should not appear after selecting the "complex" shipping option.
+* Fix - WC 6.9 compatibility: The free shipping threshold should be cleared after selecting the "No" free shipping option.
+* Fix - WC 6.9 compatibility: The selected free shipping option should be reset after setting all shipping rates to 0.
+* Fix - WC 7.1 compatibility: Fixing the forms in the free listings setup may cause infinite requesting state updates which lead to a blank page or issue a lot of API requests.
+* Fix - WordPress 5.9 Compatibility: Visually hide descriptions of external link icons.
+* Fix - WordPress 6.1 Compatibility: Popover and Tooltip components should be displayed as floating.
+* Fix - WordPress 6.1 Compatibility: The size of navigation icons in Datepicker component should not be a giant size.
+* Tweak - WC 7.1 compatibility.
+* Tweak - WP 6.1 compatibility.
+* Update - ISO3166 package version 4.1.
 
-= 2.1.0 - 2022-08-23 =
-* Add - Automatically sync WooCommerce shipping settings with Merchant Center.
-* Add - Get shipping rates suggestions for provinces/states and postal codes.
-* Add - Option to automatically sync the shipping rates based on the store shipping zone configurations.
-* Add - Sync the shipping rates for states/provinces and postal codes to Merchant Center.
-* Fix - A compatibility issue with WC 6.5+ that the store country might be undefined and further break the onboarding setup.
-* Tweak - Generate random ID for postcode regions when syncing shipping settings.
+= 2.2.0 - 2022-10-18 =
+* Add - Ad previews in the post-onboarding ads setup flow.
+* Add - Combine the audience and shipping steps for the onboarding flow and the editing free listings page.
+* Add - Streamlined Free Listings + Paid Ads for the onboarding flow.
+* Add - The disclaimer of Comparison Shopping Service of the accounts setup of onboarding flow.
+* Add - The submission success modal on the Product Feed page after the onboarding is completed along with paid ads setup.
+* Fix - A validateDOMNesting warning in the accounts setup step of the onboarding flow.
+* Fix - Free Listings + Paid Ads: Add the paid ads previews to the boost product listings section.
+* Fix - Remove - Support for WC < 6.8.
+* Fix - Shipping time values flash during the onboarding setup.
+* Fix - Steppers on the onboarding flow allow switching to later steps when the current step is not yet finished.
+* Fix - The "Or, create a new Google Ads account" button at the footer of the Google Ads account setup is clickable when connecting an existing account.
+* Fix - The incorrect active status style for a disabled button.
+* Tweak - Use different titles for the free listings setup of the onboarding and editing pages.
+* Update - Change the steppers in the onboarding flow to only allow going back to the previous steps.
+* Update - Detect the verification status of the phone number in the contact information settings.
+* Update - Layouts and copywriting of the Get Started page and the onboarding flow.
+* Update - Logos of Google Merchant Center and Google Ads.
+* Update - Open the billing setup page of Google Ads via a popup window and add an alternative hyperlink to open the same setup page.
+* Update - The FAQs in the paid ads setup and the campaign setup page.
 
-= 2.0.4 - 2022-08-16 =
-* Dev - E2E Fix for redirecting to single product page.
-* Dev - Remove wc-admin installation from E2E env setup.
-* Fix - Handle multiple errors in the Edit free listings page.
-* Fix - Hide WooCommerce System messages in the plugin screen. .
-* Fix - Onload conflict when tracking events.
+= 2.1.4 - 2022-10-04 =
+* Add - Policy Compliance Checks in the onboarding flow.
+* Tweak - WC 7.0 compatibility.
+
+= 2.1.3 - 2022-09-27 =
+* Fix - Avoid truncate for issues with more than 100 characters length.
+* Fix - Update Size Type Attribute available values.
+* Tweak - Update Website not Claimed issue information.
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/google-listings-and-ads/trunk/changelog.txt).
