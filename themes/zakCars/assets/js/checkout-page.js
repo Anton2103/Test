@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
 
-    $('body').on('updated_checkout', function() {
+    $('body').on('updated_checkout', function () {
 
         console.log('updated_checkout');
         let buttonSubmit = $('#place_order');
@@ -24,10 +24,10 @@
         buttonSubmit.prop("disabled", true);
         let numRequired = required.length;
         let counter = 0;
-        required.forEach(function(item) {
+        required.forEach(function (item) {
             let varRequired = item.querySelector("input, select, textarea").value;
-            if (varRequired.length == 0){
-                counter ++;
+            if (varRequired.length == 0) {
+                counter++;
             }
         });
         if (counter == 0) {
@@ -36,7 +36,7 @@
         console.log()
     });
 
-    $('.validate-required').find("input, select, textarea").on('change', function(e){
+    $('.validate-required').find("input, select, textarea").on('change', function (e) {
         $('body').trigger('updated_checkout');
     })
 })(jQuery);

@@ -1,0 +1,19 @@
+{
+    "name": "macbook/zak-cars",
+    "description": "test",
+    "authors": [
+        {
+            "name": "Anton",
+            "email": "gaitanzhy@gmail.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : ""
+        }
+    },
+    "require-dev": {}
+}
