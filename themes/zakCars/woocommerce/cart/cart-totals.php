@@ -99,13 +99,7 @@ defined('ABSPATH') || exit;
             <td data-title="<?php esc_attr_e('Total', 'woocommerce'); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
         </tr>
 
-        <tr class="cashback">
-            <th><?php esc_html_e('Сashback', 'woocommerce'); ?></th>
-            <td data-title="
-            <?php esc_attr_e('Сashback', 'woocommerce'); ?>">
-                <?php wc_cart_cashback_html(); ?>
-            </td>
-        </tr>
+
 
         <?php do_action('woocommerce_cart_totals_after_order_total'); ?>
 

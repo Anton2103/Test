@@ -2,8 +2,8 @@
 
 namespace Inc;
 
-class General {
-
+class General
+{
     /**
      * Init general commands and hooks
      */
@@ -24,7 +24,6 @@ class General {
      */
     public static function getInstance()
     {
-
         if (null == static::$_instance) {
             static::$_instance = new self();
         }
@@ -37,11 +36,12 @@ class General {
      */
     private function __construct()
     {
-
         ################################################################################
         # setup theme
         ################################################################################
 
+        add_action('init', [$this, 'registerScripts']);
+        add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
 
 
         ################################################################################
@@ -50,7 +50,6 @@ class General {
 
         //create settings page
         if (function_exists('acf_add_options_page')) {
-
             acf_add_options_page([
                 'page_title' => 'Theme General Settings',
                 'menu_title' => 'Theme Settings',
@@ -59,6 +58,39 @@ class General {
                 'redirect' => false,
             ]);
         }
+    }
 
+    /**
+     * register js scripts for the theme
+     */
+    public function registerScripts()
+    {
+        wp_register_script(
+            TEXTDOMAIN . '-cart-page-js',
+            ASSETSURL . '/js/cart-page.js',
+            ['jquery'],
+            ASSETS_VERSION,
+            true
+        );
+    }
+
+    /**
+     *  enqueue all styles and scripts
+     */
+    public function enqueueScripts()
+    {
+        wp_enqueue_script(
+            'autocomplete-js-ui',
+            'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
+            array('jquery'),
+            '1.8.1',
+            true
+        );
+
+        wp_enqueue_script(TEXTDOMAIN . '-cart-page-js');
+
+        wp_localize_script(TEXTDOMAIN . '-cart-page-js', 'variables', [
+            'ajaxurl' => admin_url('admin-ajax.php'),
+        ]);
     }
 }
