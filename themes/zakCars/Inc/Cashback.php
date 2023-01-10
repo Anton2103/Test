@@ -43,7 +43,6 @@ class Cashback
         add_action('woocommerce_after_calculate_totals', [$this, 'calculateDiscount'], 10);
     }
 
-
     // create new menu item 'wallet' in my account
     public function walletLink($menu_links)
     {
@@ -164,51 +163,10 @@ class Cashback
         }
     }
 
-    public function applyCashback()
-    {
-        $result = [
-            'success' => false,
-            'error' => false,
-            'data' => []
-        ];
-
-//        $checked = $_POST['checked'];
-//        $discount = WC()->session->get('use_cashback', 0);
-//
-//        if ($checked && !$discount) {
-//            $totals = WC()->cart->get_totals()['total'];
-//            $half_totals = $totals * 0.5;
-//            $user_id = get_current_user_id();
-//            $cashback = get_user_meta($user_id, 'wallet', true);
-//            $discount = 0;
-//
-//            if ($cashback > $half_totals) {
-//                $discount = $half_totals;
-//            };
-//            if ($cashback <= $half_totals) {
-//                $discount = $cashback;
-//            };
-//
-//            WC()->session->set('use_cashback', $discount);
-//        } elseif (!$checked) {
-//            WC()->session->set('use_cashback', null);
-//        }
-
-        $result['success'] = true;
-        wp_send_json($result);
-    }
-
     public function calculateDiscount()
     {
         $checked = isset($_POST['discount']);
         $current_discount = WC()->session->get('use_cashback', 0);
-
-//        if (!empty($current_discount)){
-//            print ('<pre>');
-//            var_dump(WC()->cart->get_totals());
-//            print ('</pre>');
-//            exit();
-//        }
 
         if ($checked) {
             $totals = WC()->cart->get_totals()['cart_contents_total'];
@@ -223,13 +181,10 @@ class Cashback
                 $discount = $cashback;
             };
 
-
-
             if ($discount !== $current_discount) {
                 WC()->session->set('use_cashback', $discount);
                 WC()->cart->calculate_totals();
             }
-
         }
     }
 
@@ -237,15 +192,6 @@ class Cashback
     {
         $checked = isset($_POST['discount']);
         $discount = WC()->session->get('use_cashback', 0);
-
-//        if (!empty($discount) || true)  {
-//            print ('<pre>');
-//            var_dump($checked);
-//            var_dump($discount);
-//            print ('</pre>');
-//            exit();
-//        }
-
         if (!empty($_POST['update_cart']) && !$checked) {
             $discount = 0;
             WC()->session->set('use_cashback', null);
@@ -259,7 +205,6 @@ class Cashback
     public function displayApplyDiscount()
     {
         $discount = WC()->session->get('use_cashback', 0);
-
         $user_id = get_current_user_id();
         $cashback = get_user_meta($user_id, 'wallet', true);
 
@@ -273,7 +218,6 @@ class Cashback
             </div>
             <?php
         }
-
     }
 }
 
